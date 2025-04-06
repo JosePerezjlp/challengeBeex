@@ -68,10 +68,6 @@ export default function ProfileContainer() {
     }
   };
 
-  // useEffect(() => {
-  //   clearOldFavorites();
-  // }, []);
-
   return (
     <View className="flex justify-center flex-1">
       <View className="-mt-[150px]">

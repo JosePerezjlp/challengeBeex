@@ -1,50 +1,25 @@
-# Welcome to your Expo app 👋
-
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Get started
 
 ## Get started
 
-1. Install dependencies
+1. Bajar el repositorio
 
    ```bash
-   npm install
+   Clonar repositorio
    ```
 
-2. Start the app
+2. Instalación de dependencias
 
    ```bash
-    npx expo start
+    npm install
    ```
 
-In the output, you'll find options to open the app in a
+3. Arrancar la aplicacion
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+    npm expo start
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Explicacion breve
 
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Se creó la aplicación por medio de Expo Router, rutas automáticas al estilo de Next.js; se usó AsyncStorage para la persistencia de datos e inicio de sesión. La vista inicial es el login, en el cual, si ya tienes una cuenta, pueden loguear tranquilamente y te llevaría a los complejos disponibles. En la misma vista tiene para recuperar contraseña y crear una cuenta. Crear una cuenta nueva tiene el formulario controlador con regex y corrobora que las contraseñas coincidan, tengan al menos una mayúscula y tengan más de 8 caracteres. Si el mail ya existe, no te dejará usar el mismo para otro usuario. Una vez registrado, te lleva a tu perfil para poder cambiar tus datos y también poder cambiar tu contraseña nuevamente. Hay una opción que dice "Mis favoritos"; en caso de tener ya seleccionado, te muestre cuáles son. Las demás opciones como "Lenguaje", "Políticas de privacidad" y "Términos de uso" están de adorno; el círculo gris que simula una imagen también está de adorno, pero lo demás tiene funcionalidad. También incorporé un navbar para poder tener una mejor experiencia sobre la app y así poder moverse libremente a donde se desee. Se aplicó la mayoría de los ítems que pedían (espero no haberme olvidado nada; puede pasar, es domingo). En la vista de partidos pueden buscar por nombre y al hacer clic sobre el botón 'Unirse' devuelve un mensaje simple. Está el botón Matching, el cual solo muestra los partidos según el nivel del jugador.
